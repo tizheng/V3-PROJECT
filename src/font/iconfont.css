@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3555182 */
-  src: url('iconfont.woff2?t=1678447944232') format('woff2'),
-       url('iconfont.woff?t=1678447944232') format('woff'),
-       url('iconfont.ttf?t=1678447944232') format('truetype');
+  src: url('iconfont.woff2?t=1678522287826') format('woff2'),
+       url('iconfont.woff?t=1678522287826') format('woff'),
+       url('iconfont.ttf?t=1678522287826') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,54 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-daifahuo1:before {
+  content: "\e648";
+}
+
+.icon-daifukuan1:before {
+  content: "\e64a";
+}
+
+.icon-daishouhuo1:before {
+  content: "\e64e";
+}
+
+.icon-yiwancheng:before {
+  content: "\e72d";
+}
+
+.icon-daishouhuo:before {
+  content: "\fec3";
+}
+
+.icon-daifahuo:before {
+  content: "\fec4";
+}
+
+.icon-daifukuan:before {
+  content: "\fec5";
+}
+
+.icon-wode:before {
+  content: "\e8a0";
+}
+
+.icon-xiaoxizhongxin:before {
+  content: "\e63c";
+}
+
+.icon-jiankangbaike:before {
+  content: "\e691";
+}
+
+.icon-shouye:before {
+  content: "\e629";
+}
+
+.icon-yiliao_jibingbaike:before {
+  content: "\e63b";
 }
 
 .icon-eye:before {

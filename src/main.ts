@@ -6,8 +6,9 @@ import 'vant/lib/index.css'
 import './styles/main.css'
 import './font/iconfont.css'
 import '@/utils/vant'
-const app = createApp(App)
+import './permission'
 
+const app = createApp(App)
 app.use(pinia)
 app.use(router)
 app.mount('#app')

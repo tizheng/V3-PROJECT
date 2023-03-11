@@ -21,7 +21,7 @@
               :rules="[{ pattern, message: '请输入正确的手机号' }]"
             />
             <van-field
-              v-show="show"
+              v-if="show"
               v-model.trim="password"
               :type="passwordType ? 'text' : 'password'"
               name="password"
@@ -32,7 +32,7 @@
             >
             </van-field>
             <van-field
-              v-show="!show"
+              v-if="!show"
               v-model.trim="code"
               name="code"
               :placeholder="`${placeholder}`"
@@ -82,13 +82,14 @@ import { login, getCode, loginCode } from '@/api/user'
 import { showToast, showSuccessToast, Toast } from 'vant'
 import type { FormInstance } from 'vant'
 import { useUserStore } from '@/stores/modules/user'
+import { useRouter } from 'vue-router'
 const rightText = ref<string>('注册')
 const handleOnClickRight = () => {
   console.log('x')
 }
 const passwordType = ref(false)
-const mobile = ref('')
-const password = ref('')
+const mobile = ref('13230000001')
+const password = ref('abc12345')
 const checked = ref(false)
 const code = ref('')
 const pattern = /^1[3-9]\d{9}$/
@@ -99,6 +100,7 @@ const formRef = ref<FormInstance>()
 let counter = ref(0)
 let timeId: number
 const disabledEl = ref(false)
+const router = useRouter()
 //密码登录
 const onSubmit = async (values: Object) => {
   if (!checked.value) return showToast('请勾选我已同意')
@@ -107,7 +109,8 @@ const onSubmit = async (values: Object) => {
       code.value.length > 0
         ? await loginCode(mobile.value, code.value)
         : await login(values)
-    store.setUser(res.data.data)
+    store.setUser(res.data)
+    router.replace('/user')
     showSuccessToast('登录成功')
   } catch (error) {
     console.log(error)

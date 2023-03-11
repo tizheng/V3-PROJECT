@@ -1,3 +1,4 @@
+import { User } from './user'
 export type CodeType =
   | 'login'
   | 'register'
@@ -27,41 +28,9 @@ export interface Data {
 /**
  * empty object
  */
-export interface loginCodeELS {
+export interface loginCodeELS extends User {
   /**
    * 正常返回10000，其他表示错误
    */
-  code: number
-  data: loginCodeDate
-  /**
-   * 接口信息
-   */
-  message: string
-}
-
-export interface loginCodeDate {
-  /**
-   * 用户名
-   */
-  account: string
-  /**
-   * 头像
-   */
-  avatar: string
-  /**
-   * 用户id
-   */
-  id: string
-  /**
-   * 脱敏手机号，带星号的手机号
-   */
-  mobile: string
-  /**
-   * refreshToken
-   */
   refreshToken: string
-  /**
-   * token
-   */
-  token: string
 }

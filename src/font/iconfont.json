@@ -6,6 +6,90 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1133800",
+      "name": "待发货",
+      "font_class": "daifahuo1",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "1133802",
+      "name": "待付款",
+      "font_class": "daifukuan1",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "1133806",
+      "name": "待收货",
+      "font_class": "daishouhuo1",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "19520252",
+      "name": "已完成",
+      "font_class": "yiwancheng",
+      "unicode": "e72d",
+      "unicode_decimal": 59181
+    },
+    {
+      "icon_id": "25672106",
+      "name": "待收货",
+      "font_class": "daishouhuo",
+      "unicode": "fec3",
+      "unicode_decimal": 65219
+    },
+    {
+      "icon_id": "25672109",
+      "name": "待发货",
+      "font_class": "daifahuo",
+      "unicode": "fec4",
+      "unicode_decimal": 65220
+    },
+    {
+      "icon_id": "25672111",
+      "name": "待付款",
+      "font_class": "daifukuan",
+      "unicode": "fec5",
+      "unicode_decimal": 65221
+    },
+    {
+      "icon_id": "2076312",
+      "name": " 我的",
+      "font_class": "wode",
+      "unicode": "e8a0",
+      "unicode_decimal": 59552
+    },
+    {
+      "icon_id": "4770745",
+      "name": "消息中心",
+      "font_class": "xiaoxizhongxin",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "10268860",
+      "name": "健康百科",
+      "font_class": "jiankangbaike",
+      "unicode": "e691",
+      "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "11016134",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "29410399",
+      "name": "医疗_疾病百科",
+      "font_class": "yiliao_jibingbaike",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
       "icon_id": "4765896",
       "name": "eye",
       "font_class": "eye",

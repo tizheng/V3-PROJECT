@@ -16,19 +16,23 @@ const constantRoutes = [
     children: [
       {
         path: '/home',
-        component: () => import('@/views/Home/index.vue')
+        component: () => import('@/views/Home/index.vue'),
+        meta: { title: '主页' }
       },
       {
         path: '/article',
-        component: () => import('@/views/Article/index.vue')
+        component: () => import('@/views/Article/index.vue'),
+        meta: { title: '健康百科' }
       },
       {
         path: '/notify',
-        component: () => import('@/views/Notify/index.vue')
+        component: () => import('@/views/Notify/index.vue'),
+        meta: { title: '消息通知' }
       },
       {
         path: '/user',
-        component: () => import('@/views/User/index.vue')
+        component: () => import('@/views/User/index.vue'),
+        meta: { title: '用户中心' }
       }
     ]
   }
