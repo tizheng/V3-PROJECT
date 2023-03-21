@@ -8,7 +8,7 @@ import { showConfirmDialog } from 'vant'
 const tools = [
   { label: '我的问诊', path: '/user/consult', icon: 'iconfont icon-QQ' },
   { label: '我的处方', path: '/', icon: 'iconfont icon-QQ' },
-  { label: '家庭档案', path: '/user/patient', icon: 'iconfont icon-QQ' },
+  { label: '家庭档案', path: '/patient', icon: 'iconfont icon-QQ' },
   { label: '地址管理', path: '/user/address', icon: 'iconfont icon-QQ' },
   { label: '我的评价', path: '/', icon: 'iconfont icon-QQ' },
   { label: '官方客服', path: '/', icon: 'iconfont icon-QQ' },
@@ -117,7 +117,7 @@ onMounted(() => {
           <template v-for="item in tools" :key="item.label">
             <van-cell
               :title="item.label"
-              :path="item.path"
+              :to="item.path"
               is-link
               style="font-size: 13px"
             >

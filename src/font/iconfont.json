@@ -6,6 +6,62 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "16277097",
+      "name": "健康档案",
+      "font_class": "jiankangdangan",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "22572697",
+      "name": "门诊",
+      "font_class": "menzhen-01",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "27340845",
+      "name": "药品订单",
+      "font_class": "yaopindingdan",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "27340848",
+      "name": "医生处方",
+      "font_class": "yishengchufang",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "27340854",
+      "name": "问诊",
+      "font_class": "wenzhen",
+      "unicode": "e68f",
+      "unicode_decimal": 59023
+    },
+    {
+      "icon_id": "31576142",
+      "name": "医生",
+      "font_class": "yisheng",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "31581444",
+      "name": "门诊",
+      "font_class": "menzhen",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "33909061",
+      "name": "查疾病",
+      "font_class": "a-1-13",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
       "icon_id": "1133800",
       "name": "待发货",
       "font_class": "daifahuo1",

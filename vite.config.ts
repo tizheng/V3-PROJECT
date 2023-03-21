@@ -9,7 +9,9 @@ import { VantResolver } from 'unplugin-vue-components/resolvers'
 export default defineConfig({
   plugins: [
     // 解析单文件组件的插件
-    vue(),
+    vue({
+      reactivityTransform: true
+    }),
     // 自动导入的插件，解析器可以是 vant element and-vue
     Components({
       dts: false,

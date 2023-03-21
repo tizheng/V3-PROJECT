@@ -122,3 +122,53 @@ export interface OrderInfo {
    */
   shippedNumber: number
 }
+export type Patient = {
+  /** 患者ID */
+  id?: string
+  /** 患者名称 */
+  name: string
+  /** 身份证号 */
+  idCard: string
+  /** 0不默认  1默认 */
+  defaultFlag: 0 | 1 | boolean
+  /** 0 女  1 男 */
+  gender: 0 | 1 | string
+  /** 性别文字 */
+  genderValue?: string | number
+  /** 年龄 */
+  age?: number
+}
+export type patientList = Patient[]
+
+/**
+ * 关注
+ */
+export interface Like {
+  /**
+   * 请求成功10000标志
+   */
+  code?: number
+  /**
+   * 返回数据
+   */
+  data?: Data
+  /**
+   * 请求成功
+   */
+  message?: string
+  /**
+   * 请求成功标志
+   */
+  success?: boolean
+}
+
+/**
+ * 返回数据
+ */
+export interface Data {
+  /**
+   * 关注信息id
+   */
+  id: string
+}
+export type likeType = 'topic' | 'knowledge' | 'doc' | 'disease'

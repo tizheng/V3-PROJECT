@@ -20,6 +20,7 @@
 body {
   font-size: 14px;
   color: var(--cp-text1);
+  overflow: hidden;
 }
 
 a {
@@ -37,4 +38,8 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+}
+
+.van-list__finished-text {
+  padding-bottom: 50px;
 }

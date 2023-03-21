@@ -35,6 +35,21 @@ const constantRoutes = [
         meta: { title: '用户中心' }
       }
     ]
+  },
+  {
+    path: '/patient',
+    component: () => import('@/views/patient/index.vue'),
+    meta: { title: '家庭档案' }
+  },
+  {
+    path: '/consult/fast',
+    component: () => import('@/views/Consult/ConsultFast.vue'),
+    meta: { title: '极速问诊' }
+  },
+  {
+    path: '/consult/dep',
+    component: () => import('@/views/Consult/ConsultDep.vue'),
+    meta: { title: '选择科室' }
   }
 ]
 const router = createRouter({
